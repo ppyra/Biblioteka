@@ -14,11 +14,10 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
-from shelf.views import AuthorListView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('authors/', AuthorListView.as_view()),
+    path('shelf/', include(('shelf.urls', 'shelf'), namespace='shelf')), #namespace zabezpiecza przed widokami o takiej samej nazwe w innej aplikacji
 ]

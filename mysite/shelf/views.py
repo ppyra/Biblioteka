@@ -4,3 +4,6 @@ from .models import Author
 
 class AuthorListView(ListView):
     model = Author
+
+class AuthorDetailView(DetailView):
+    model = Author
