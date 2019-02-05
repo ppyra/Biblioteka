@@ -1,5 +1,4 @@
 #coding:utf-8
-#kompatybilnośc pythona 3 z 2
 from __future__ import unicode_literals, absolute_import, print_function # to musi być zawsze pierwsze (IMPORT Z PRZYSZŁOSCI)
 from django.utils.encoding import python_2_unicode_compatible
 
@@ -11,18 +10,58 @@ from django.db import models
 class Author(models.Model):
     first_name = models.CharField(max_length=20)
     last_name = models.CharField(max_length=50)
+
     def __str__(self):
         return "{first_name} {last_name}".format(first_name = self.first_name, last_name=self.last_name)
+
 @python_2_unicode_compatible
 class Publiser(models.Model):
     name = models.CharField(max_length=70)
     def __str__(self):
         return "{name}".format(name=self.name)
+
+@python_2_unicode_compatible
+class BookCategory(models.Model):
+    name = models.CharField(max_length=50)
+
+    def __str__(self):
+        return self.name
+
+
 @python_2_unicode_compatible
 class Book(models.Model):
+    "coś w rodzaju rękopisu"
+
     title = models.CharField(max_length=100)
-    author = models.ForeignKey(Author, on_delete=models.CASCADE)
-    isbn = models.CharField(max_length=17)
-    publisher = models.ForeignKey(Publiser, on_delete=models.CASCADE)
+    authors = models.ManyToManyField(Author)
+    categtegories = models.ManyToManyField(BookCategory)
+    #author = models.ForeignKey(Author, on_delete=models.CASCADE)
+
     def __str__(self):
         return "{title}".format(title=self.title)
+
+@python_2_unicode_compatible
+class BookEdition(models.Model):
+    "wydanie określonej ksiażeki"
+    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    isbn = models.CharField(max_length=17, blank=True) #blank=True moze zawierać null
+    date = models.DateField()
+    publisher = models.ForeignKey(Publiser, on_delete=models.CASCADE)
+
+    def __str__(self):
+        return "{book.title}, {publisher.name}".format(book=self.book, publisher=self.publisher)
+COVER_TYPES = {
+    ('soft', 'Soft'),
+    ('hard', "Hard"),
+    #wartość przechowywana w bazie , wartść wyświetlana
+}
+
+@python_2_unicode_compatible
+class BookItem(models.Model):
+    "konkretny egzemplarz"
+    edition = models.ForeignKey(BookEdition, on_delete=models.CASCADE)
+    catalog_number = models.CharField(max_length=30)
+    cover_type = models.CharField(max_length=4, choices=COVER_TYPES)
+
+    def __str__(self):
+        return "{edition},{cover}".format(edition=self.edition, cover=self.get_cover_display())
