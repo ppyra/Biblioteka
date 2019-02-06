@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9a4546f3-16e3-463d-bf31-7e1fd0040e24" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shelf/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/shelf/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mysite/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/mysite/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/rental/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rental/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/rental/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/shelf/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/shelf/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,15 +16,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shelf/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shelf/admin.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -36,11 +28,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/rental/admin.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="170">
+              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              <folding>
+                <element signature="e#0#32#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rental/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+            <state relative-caret-position="272">
+              <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -51,38 +55,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mysite/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="680">
-              <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contact/templates/contact/message_form.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="20" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/contact/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="8" column="28" selection-start-line="8" selection-start-column="28" selection-end-line="8" selection-end-column="28" />
-              <folding>
-                <element signature="e#0#53#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shelf/templates/shelf/author_detail.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+            <state relative-caret-position="-1099">
+              <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
             </state>
           </provider>
         </entry>
@@ -90,7 +64,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/shelf/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
+            <state relative-caret-position="102">
               <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
@@ -100,19 +74,36 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/templates/base.html">
+        <entry file="file://$PROJECT_DIR$/mysite/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="17" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="17" />
+            <state relative-caret-position="272">
+              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/shelf/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+              <folding>
+                <element signature="e#14#139#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mysite/urls.py">
+        <entry file="file://$PROJECT_DIR$/contact/admin.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/contact/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+            <state relative-caret-position="170">
+              <caret line="10" selection-start-line="10" selection-end-line="10" />
             </state>
           </provider>
         </entry>
@@ -141,13 +132,14 @@
         <option value="$PROJECT_DIR$/shelf/templates/shelf/author_list.html" />
         <option value="$PROJECT_DIR$/contact/templates/contact/message_detail.html" />
         <option value="$PROJECT_DIR$/mysite/urls.py" />
-        <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/contact/models.py" />
         <option value="$PROJECT_DIR$/contact/templates/contact/message_form.html" />
         <option value="$PROJECT_DIR$/contact/views.py" />
         <option value="$PROJECT_DIR$/contact/forms.py" />
         <option value="$PROJECT_DIR$/shelf/admin.py" />
+        <option value="$PROJECT_DIR$/rental/admin.py" />
         <option value="$PROJECT_DIR$/shelf/models.py" />
+        <option value="$PROJECT_DIR$/mysite/settings.py" />
         <option value="$PROJECT_DIR$/rental/models.py" />
       </list>
     </option>
@@ -281,7 +273,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="0" width="814" height="877" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28381962" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2917772" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -333,13 +325,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/contact/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/.virtualenvs/mysite/Lib/site-packages/django/utils/encoding.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -354,13 +339,6 @@
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="680">
-          <caret line="40" column="14" selection-start-line="40" selection-start-column="14" selection-end-line="40" selection-end-column="14" />
         </state>
       </provider>
     </entry>
@@ -388,16 +366,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shelf/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -405,10 +373,50 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/contact/admin.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/contact/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" selection-start-line="10" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mysite/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shelf/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/wsgi.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mysite/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1099">
+          <caret line="41" column="12" lean-forward="true" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/rental/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="30" lean-forward="true" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -422,19 +430,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/shelf/models.py">
+    <entry file="file://$PROJECT_DIR$/rental/admin.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="46" column="67" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
+        <state relative-caret-position="170">
+          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/rental/models.py">
+    <entry file="file://$PROJECT_DIR$/shelf/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="44" lean-forward="true" selection-start-line="13" selection-start-column="44" selection-end-line="13" selection-end-column="44" />
+        <state relative-caret-position="476">
+          <caret line="45" column="22" lean-forward="true" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
           <folding>
-            <element signature="e#0#28#0" expanded="true" />
+            <element signature="e#14#139#0" expanded="true" />
           </folding>
         </state>
       </provider>
