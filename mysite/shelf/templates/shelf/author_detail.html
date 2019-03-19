@@ -3,4 +3,11 @@
 {% block 'content' %} <!-- blok, do którego chce coś wpisać -->
 <div><a href="{% url 'shelf:author-list' %}"><- Powrót do listy autorów</a></div>
 Profil autora: {{object.last_name}}, {{object.first_name}}
+
+<h2>Książki:</h2>
+<ul>
+    {% for book in object.book_set.all %}
+    <li>{{ book.title }}</li>
+    {% endfor %}
+</ul>
 {% endblock %}
