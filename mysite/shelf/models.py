@@ -1,7 +1,7 @@
 #coding:utf-8
 from __future__ import unicode_literals, absolute_import, print_function # to musi być zawsze pierwsze (IMPORT Z PRZYSZŁOSCI)
 from django.utils.encoding import python_2_unicode_compatible
-
+from django.urls import reverse
 #from six.moves import range
 
 from django.db import models
@@ -46,10 +46,16 @@ class Book(models.Model):
     def __str__(self):
         return "{title}".format(title=self.title)
 
+# Zwraca ścieżkę szczegółów dostępu do danego modlu
+    def get_absolute_url(self):
+        #reverse zamienia nazwę widoku, podając parametry na konkretną ścieżkę
+        return reverse('shelf:book-detail', kwargs={'pk':self.id})
+
+
 @python_2_unicode_compatible
 class BookEdition(models.Model):
     "wydanie określonej ksiażeki"
-    book = models.ForeignKey(Book, on_delete=models.CASCADE)
+    book = models.ForeignKey(Book, on_delete=models.CASCADE, related_name='editions')
     isbn = models.CharField(max_length=17, blank=True) #blank=True moze zawierać null
     date = models.DateField()
     publisher = models.ForeignKey(Publiser, on_delete=models.CASCADE)

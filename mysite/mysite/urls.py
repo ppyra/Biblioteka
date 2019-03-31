@@ -16,9 +16,12 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from contact.views import MessageAddView
+from shelf.views import MainPageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('shelf/', include(('shelf.urls', 'shelf'), namespace='shelf')), #namespace zabezpiecza przed widokami o takiej samej nazwe w innej aplikacji
-    path('contact', MessageAddView.as_view())
+    path('contact', MessageAddView.as_view()),
+    #path('', 'shelf.views.index_view', name='main-page'),
+    path('', MainPageView.as_view(), name='main-page'),
 ]

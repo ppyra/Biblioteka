@@ -1,6 +1,8 @@
 from django.contrib import admin
 
-from .models import Author, Publiser, Book, BookCategory
+from .models import (
+    Author, Publiser, Book, BookCategory, BookEdition, BookItem,
+)
 
 class AuthorAdmin(admin.ModelAdmin):
     search_fields = ['last_name', 'first_name'] # dodaje wyszukiwarkę
@@ -14,3 +16,5 @@ admin.site.register(Author, AuthorAdmin)
 admin.site.register(Book, BookAdmin)
 admin.site.register([Publiser]) #dodaje do panelu admina tabele z bazą danych
 admin.site.register(BookCategory)
+admin.site.register(BookEdition)
+admin.site.register(BookItem)
